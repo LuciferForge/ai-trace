@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-trace"
+version = "0.1.0"
+description = "Zero-dependency local AI agent decision tracer. Records every step an AI agent takes — what it saw, what it decided, why."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "manja316" }]
+keywords = ["ai", "agents", "tracing", "observability", "llm", "debugging"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+ai-trace = "ai_trace.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/manja316/ai-trace"
+Repository = "https://github.com/manja316/ai-trace"
+Issues = "https://github.com/manja316/ai-trace/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ai_trace*"]

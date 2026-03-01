@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+traces/
+*.jsonl
+*.json
+!pyproject.toml
+.env
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
