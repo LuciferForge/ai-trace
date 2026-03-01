@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Zero-dependency local AI agent decision tracer. Records every step an AI agent takes — what it saw, what it decided, why."
 readme = "README.md"
 license = { text = "MIT" }
-authors = [{ name = "manja316" }]
+authors = [{ name = "LuciferForge" }]
 keywords = ["ai", "agents", "tracing", "observability", "llm", "debugging"]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -33,9 +33,9 @@ dev = ["pytest>=7"]
 ai-trace = "ai_trace.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/manja316/ai-trace"
-Repository = "https://github.com/manja316/ai-trace"
-Issues = "https://github.com/manja316/ai-trace/issues"
+Homepage = "https://github.com/LuciferForge/ai-trace"
+Repository = "https://github.com/LuciferForge/ai-trace"
+Issues = "https://github.com/LuciferForge/ai-trace/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]

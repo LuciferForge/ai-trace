@@ -10,13 +10,13 @@
 Records every step an AI agent takes — what it saw, what it decided, and why. JSON + Markdown output. No network calls. No cloud. Entirely local.
 
 Part of the **AI Agent Infrastructure Stack**:
-- [ai-cost-guard](https://github.com/manja316/ai-cost-guard) — hard budget caps before the LLM call
-- [ai-injection-guard](https://github.com/manja316/prompt-shield) — prompt injection scanner
+- [ai-cost-guard](https://github.com/LuciferForge/ai-cost-guard) — hard budget caps before the LLM call
+- [ai-injection-guard](https://github.com/LuciferForge/prompt-shield) — prompt injection scanner
 - **ai-trace** — local decision tracer ← you are here
 
 **Claude Code users** — install the whole stack in one command:
 ```
-/plugin marketplace add manja316/ai-agent-stack-skill
+/plugin marketplace add LuciferForge/lucifer-skills
 ```
 
 ---
