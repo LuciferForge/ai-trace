@@ -1,7 +1,7 @@
 # ai-trace
 
-[![PyPI version](https://badge.fury.io/py/ai-tracer.svg)](https://pypi.org/project/ai-tracer/)
-[![Downloads](https://img.shields.io/pypi/dm/ai-tracer)](https://pypi.org/project/ai-tracer/)
+[![PyPI version](https://badge.fury.io/py/ai-decision-tracer.svg)](https://pypi.org/project/ai-decision-tracer/)
+[![Downloads](https://img.shields.io/pypi/dm/ai-decision-tracer)](https://pypi.org/project/ai-decision-tracer/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://pypi.org/project/ai-trace/)
 
@@ -19,7 +19,7 @@ Part of the **AI Agent Infrastructure Stack**:
 ## Install
 
 ```bash
-pip install ai-tracer
+pip install ai-decision-tracer
 ```
 
 No dependencies. Pure Python stdlib.
