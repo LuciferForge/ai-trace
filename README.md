@@ -3,7 +3,7 @@
 [![PyPI version](https://badge.fury.io/py/ai-decision-tracer.svg)](https://pypi.org/project/ai-decision-tracer/)
 [![Downloads](https://img.shields.io/pypi/dm/ai-decision-tracer)](https://pypi.org/project/ai-decision-tracer/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://pypi.org/project/ai-trace/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 
 **Zero-dependency local AI agent decision tracer.**
 
@@ -13,11 +13,6 @@ Part of the **AI Agent Infrastructure Stack**:
 - [ai-cost-guard](https://github.com/LuciferForge/ai-cost-guard) — hard budget caps before the LLM call
 - [ai-injection-guard](https://github.com/LuciferForge/prompt-shield) — prompt injection scanner
 - **ai-trace** — local decision tracer ← you are here
-
-**Claude Code users** — install the whole stack in one command:
-```
-/plugin marketplace add LuciferForge/lucifer-skills
-```
 
 ---
 
@@ -53,17 +48,13 @@ tracer.save_markdown()    # → traces/trading_agent_20240301_143022.md
 
 ---
 
-## Why
+## Why this exists
 
-When you run an autonomous AI agent in production — trading bot, document processor, customer service agent — you need to know *why* it made every decision.
+My trading bot made a bad trade at 3AM. Lost money. I had logs — thousands of lines of `print()` spam — but I couldn't answer the basic question: **what did the agent see at the moment it decided to enter that position?**
 
-Not just the final output. The full chain:
-- What data it saw
-- What it computed
-- What it decided
-- What happened next
+Was it a bad signal? A stale data feed? A prompt injection that slipped past the scanner? Without a structured decision trace, postmortems are guesswork.
 
-`ai-trace` gives you that. Locally. No external service.
+`ai-trace` records every step an AI agent takes — what it saw, what it decided, why, and how long it took. JSONL auto-save (survives crashes), Markdown reports (human-readable), and a CLI for quick inspection. No cloud. No external service. Everything stays local.
 
 ---
 
